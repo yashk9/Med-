@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PatientHOME"
+    android:id="@+id/drawerLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/titleBar">
+
+        <include
+            layout="@layout/main_toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:weightSum="5">
+
+
+            <Button
+                android:id="@+id/BtnCovid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_weight="0.5"
+                android:width="360dp"
+                android:background="@drawable/roundedbutton"
+                android:fontFamily="@font/lato"
+                android:text="Covid Related"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                app:backgroundTint="@color/SDL" />
+
+            <Button
+                android:id="@+id/BtnConsultation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/BtnCovid"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:layout_weight="0.5"
+                android:width="360dp"
+                android:background="@drawable/roundedbutton"
+                android:fontFamily="@font/lato"
+                android:text="Online Consultation"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                app:backgroundTint="@color/SDL" />
+
+            <Button
+                android:id="@+id/BtnVaccine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/BtnConsultation"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:layout_weight="0.5"
+                android:width="360dp"
+                android:background="@drawable/roundedbutton"
+                android:fontFamily="@font/lato"
+                android:text="Vaccine Registration"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                app:backgroundTint="@color/SDL" />
+
+            <Button
+                android:id="@+id/BtnPrecautions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/BtnVaccine"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:layout_weight="0.5"
+                android:width="360dp"
+                android:background="@drawable/roundedbutton"
+                android:fontFamily="@font/lato"
+                android:text="Necessary Precautions"
+                android:textAllCaps="false"
+                android:textSize="23dp"
+                app:backgroundTint="@color/SDL" />
+
+            <Button
+                android:id="@+id/BtnEmergency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/BtnPrecautions"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:layout_weight="0.5"
+                android:width="360dp"
+                android:background="@drawable/roundedbutton"
+                android:fontFamily="@font/lato"
+                android:text="Emergency Contacts"
+                android:textAllCaps="false"
+                android:textSize="23dp"
+                app:backgroundTint="@color/SDL" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffff">
+
+        <include layout="@layout/main_nav_drawer_patient" />
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

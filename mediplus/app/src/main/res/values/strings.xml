@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Med+</string>
+    <string-array name="UserType">
+        <item>Patient</item>
+        <item>Hospital</item>
+
+
+    </string-array>
+</resources>

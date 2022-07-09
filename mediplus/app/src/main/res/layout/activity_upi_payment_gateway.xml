@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpiPaymentGateway">
+
+    <TextView
+        android:id="@+id/txtUpiPaymentHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:height="70dp"
+        android:background="@color/SDL"
+        android:gravity="center"
+        android:text="UPI Payment"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtUpiPaymentHeader"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:text="Amount:      "
+                android:textColor="@color/text"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/editTxtAmount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:text="300"
+                android:textColor="@color/text"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTxtUpiId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:hint="UPI ID"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/editTxtNameOfHolder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:hint="Name"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/editTxtNote"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:hint="Note"
+            android:textColor="@color/text" />
+
+        <Button
+            android:id="@+id/btnUpiSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/roundedbutton"
+            android:text="SEND BY UPI"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            app:backgroundTint="@color/Button"  />
+
+    </LinearLayout>
+
+</RelativeLayout>

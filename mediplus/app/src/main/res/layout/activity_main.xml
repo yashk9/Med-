@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0FFFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="175dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher_foreground" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Med+"
+                android:textSize="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-20dp"
+                android:fontFamily="serif-monospace"
+                android:text="WELCOME"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="298dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-25dp"
+                android:layout_marginBottom="-25dp"
+                android:drawableBottom="@drawable/ic_main"
+                android:fontFamily="monospace" />
+
+            <Button
+                android:id="@+id/btnPPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/white"
+                android:drawableRight="@drawable/ic_patient"
+                android:text="PATIENT"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/Button">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btnHPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableRight="@drawable/ic_hospital"
+                android:layout_marginHorizontal="10dp"
+                android:text="HOSPITAL"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/Button" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
